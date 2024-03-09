@@ -1,0 +1,440 @@
+/*
+1. Imports
+    1.1 CSS Reset import
+2. Variables
+    2.1 Colours
+    2.2 Font sizes
+3. Mobile view
+4. Tablet view
+5. Screen view
+------------------------- */
+/* --- 1. Imports --- */
+/* CSS reset import */
+@import url(reset.css);
+
+/* --- 2. Variables --- */
+:root {
+    /* 2.1 Colours */
+    --white-c: #ffffff;
+    --lightgray-c: #e2e2e2;
+    --gray-c: #707070;
+    --darkgray-c: #464545;
+
+    /* 2.2 Font sizes */
+    --size-1: 0.75rem;
+    /* 12pt */
+    --size-2: 0.875rem;
+    /* 14pt */
+    --size-3: 1.125rem;
+    /* 18pt */
+    --
+
+    /* 2.3 Font Families */
+    --body-: sans-serif, sans-serif light;
+
+}
+
+/* index.html */
+@media screen {
+.container1 {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    color: grey;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    max-width: 900px;
+    height: 90vh;
+}
+
+.curly-bracket {
+    font-size: 100px;
+    transform: scale(2, 3);
+}
+
+.box1 {
+    text-align: center;
+    flex-direction: column;
+    line-height: 90%;
+    border: 1px solid white;
+    flex-wrap: wrap;
+    position: relative;
+    width: 40%;
+}
+
+.box2 {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+
+.box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+}
+
+
+/* Grid2.html */
+@media screen {
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    font-size: 50px;
+}
+
+.letter {
+    display: grid;
+    aspect-ratio: 1 / 1;
+    place-content: center;
+    border: 1px solid grey;
+    /* padding: 30px; */
+}
+
+.child-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    font-size: 90px;
+}
+
+.trompe {
+    rotate: 90deg;
+    text-align: right;
+    font-size: -10em;
+}
+
+.Bb {
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Cc {
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    height: 50%;
+    text-align: center;
+}
+
+.Dd {
+    font-weight: bold;
+    text-align: center;
+}
+
+.Ee {
+    font-weight: bold;
+    color: #ffff;
+    background-color: black;
+    height: 50%;
+    text-align: center;
+}
+
+.Ff {
+    height: 50%;
+    font-weight: bold;
+    text-align: center;
+    background-color: #a2a3a6;
+}
+
+.Hh {
+    background-color: red;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Ii {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Jj {
+    width: 50%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Kk {
+    background-color: red;
+    color: #ffff;
+    width: 50%;
+    text-align: center;
+}
+
+.Mm {
+    font-weight: bold;
+    color: #ffff;
+    background-color: black;
+    text-align: center;
+    width: 50%;
+}
+
+.Oo {
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #a2a3a6;
+}
+
+.Pp {
+    background-color: red;
+    color: #ffff;
+    width: 50%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Rr {
+    font-weight: bold;
+    color: #ffff;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+}
+
+.Tt {
+    width: 50%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: #a2a3a6;
+}
+
+.Ww {
+    font-weight: bold;
+    color: #ffff;
+    width: 50%;
+    background-color: black;
+    text-align: center;
+}
+
+.Yy {
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    background-color: #a2a3a6;
+    text-align: center;
+}
+}
+
+
+
+/* das kino page*/
+@media screen {
+
+.daskino {
+    font-size: 35em;
+    color: #E1E4D5;
+}
+
+.das {
+    color: #a1a48c;
+    text-align: right;
+
+}
+
+.gridbox {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #333735;
+}
+
+.kino {
+    margin-left: -5px;
+    background: none;
+}
+
+.address {
+color: red;
+font-weight: bold;
+
+
+}
+
+.firstquote {
+color: red;
+font-weight: bold;
+
+}
+}
+
+
+/* Grid.html */
+@media screen {
+
+container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    font-size: 50px;
+}
+
+.letter {
+    display: grid;
+    aspect-ratio: 1 / 1;
+    place-content: center;
+    border: 1px solid grey;
+    /* padding: 30px; */
+}
+
+
+.child-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    font-size: 90px;
+}
+
+.trompe {
+    rotate: 90deg;
+    text-align: right;
+    font-size: -10em;
+}
+
+.Bb {
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Cc {
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 80px;
+    height: 50%;
+    text-align: center;
+}
+
+.Dd {
+    font-weight: bold;
+    text-align: center;
+}
+
+.Ee {
+    font-weight: bold;
+    color: #ffff;
+    background-color: black;
+    height: 50%;
+    text-align: center;
+}
+
+.Ff {
+    height: 50%;
+    font-weight: bold;
+    text-align: center;
+    background-color: #a2a3a6;
+}
+
+.Hh {
+    background-color: red;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Ii {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Jj {
+    width: 50%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Kk {
+    background-color: red;
+    color: #ffff;
+    width: 50%;
+    text-align: center;
+}
+
+.Mm {
+    font-weight: bold;
+    color: #ffff;
+    background-color: black;
+    text-align: center;
+    width: 50%;
+}
+
+.Oo {
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #a2a3a6;
+}
+
+.Pp {
+    background-color: red;
+    color: #ffff;
+    width: 50%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Rr {
+    font-weight: bold;
+    color: #ffff;
+    background-color: black;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+}
+
+.Tt {
+    width: 50%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: #a2a3a6;
+}
+
+.Ww {
+    font-weight: bold;
+    color: #ffff;
+    width: 50%;
+    background-color: black;
+    text-align: center;
+}
+
+.Yy {
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    background-color: #a2a3a6;
+    text-align: center;
+}
+}
+
+
+
+/* Impasto.html */
+@media screen {
+
+.loeil {
+    font-size: 40px;
+    
+}
+
+.trompe {
+    font-size: 40px;
+}
+
+.grid2 {
+background-color: #E9DBCD;
+}
+}
+
