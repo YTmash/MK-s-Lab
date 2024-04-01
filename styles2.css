@@ -1,0 +1,42 @@
+.h1 {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.hamburger-icon {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    bottom: 0px;
+}
+
+.mid-section {
+    background-color: antiquewhite;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.grid-container {
+    background-color: yellow;
+}
+
+.item-1 {
+    max-width: 100%;
+}
+
+.square1 {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    color: #fff;
+}
+
+.footer {
+    color: #fff;
+    align-items: flex-end;
+    background-color: rgb(22, 134, 204);
+    padding: 30px 60px 30px 60px;
+    max-width: 75%;
+    max-height: 100%;
+}
