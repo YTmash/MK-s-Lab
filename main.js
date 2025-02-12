@@ -1,32 +1,35 @@
-let input = "I want to go to the bathroom.";
-let vowels = ['a', 'e', 'i', 'o', 'u'];
-let resultArray = [];
+const menu = {
+  _meal: '',
+  _price: 0,
 
-// Outer loop: Iterate through each character of the input string
-for (let i = 0; i < input.length; i++) {
-  let letter = input[i].toLowerCase(); // Convert to lowercase for comparison
 
-  // Check if the letter is 'e', 'u', or 'o' and add to resultArray if true
-  if (letter === 'e' || letter === 'u' || letter === 'o') {
-    resultArray.push(letter, letter); // Add the letter to resultArray
+  set meal(mealToCheck) {
+    if (typeof mealToCheck === 'string') {
+      this._meal = mealToCheck;
+    } else {
+      console.log('Meal should be a string.');
+    }
+  },
+
+  get todaysSpecial() {
+    if (this._meal && this._price === true) {
+      return `Today's Special is ${this.meal}}for $${this.price}`;
+    } else {
+      return  `Meal or price was not set correctly!`;
+    }
+  },
+
+  set price (priceToCheck) {
+    if(typeof priceToCheck === 'number') {
+    this._price = priceToCheck;
+  } else {
+    console.log(menu);
+    }
   }
+};
 
-  // Inner loop: Iterate through each vowel
-  for (let j = 0; j < vowels.length; j++) {
-    // Check if the current letter matches the current vowel
-    if(letter === 'u') {
-      resultArray.push(letter, letter);
-    }
-    else {
-      resultArray.push(letter);
-    }
-    if (letter === vowels[j]) {
-      resultArray.push(letter); // Add the vowel to resultArray
-      console.log("Match found:", letter); // Log the found vowel
-    }
-  }
-}
 
-let resultString = resultArray.join('').toUpperCase();
-console.log(resultString);
-console.log("Result Array:", resultArray); // Output the result array with found vowels
+menu.meal = 'chicken';
+menu.price = 23;
+
+console.log(menu.todaysSpecial);
